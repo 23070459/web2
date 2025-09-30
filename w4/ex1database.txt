@@ -1,0 +1,28 @@
+-- SQL file for PHP User Management System
+-- Database: LoginReg
+-- Table: table1
+
+-- Create database
+CREATE DATABASE IF NOT EXISTS `LoginReg` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `LoginReg`;
+
+-- Create table1 for user data
+CREATE TABLE IF NOT EXISTS `Laptops` (
+ CREATE TABLE Laptops (
+    LaptopID INT AUTO_INCREMENT PRIMARY KEY,
+    Brand VARCHAR(50) NOT NULL,
+    Model VARCHAR(100) NOT NULL,
+    Processor VARCHAR(100),
+    RAM INT,
+    Color VARCHAR(30)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Insert sample data (optional)
+INSERT INTO Laptops (Brand, Model, Processor, RAM, Color)
+VALUES
+('Dell', 'XPS 13 9310', 'Intel Core i7-1165G7', 16, 'Silver'),
+('HP', 'Pavilion 15', 'AMD Ryzen 5 5500U', 8, 'Black'),
+('Apple', 'MacBook Air M2', 'Apple M2', 16, 'Space Gray'),
+('Lenovo', 'ThinkPad X1 Carbon Gen 9', 'Intel Core i7-1185G7', 16, 'Black'),
+('Asus', 'ROG Zephyrus G14', 'AMD Ryzen 9 5900HS', 32, 'White'),
+('Acer', 'Aspire 5', 'Intel Core i5-1135G7', 8, 'Silver');
